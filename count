@@ -1,0 +1,70 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class count : MonoBehaviour
+{
+    // call GameModeManager script
+    public GameModeManager gameModeManager;
+    // set escape people number
+    public int escapeCount = 0;
+    // control whether show the GUI
+    public bool showCount = false;
+
+
+    public void IncrementEscapeCount()
+    {
+        // increase escape people number
+        escapeCount++;
+        // check win that all the npc escaped
+        if (escapeCount == 9)
+        {
+            // call GameModeManager script and set true to win
+            gameModeManager.EndGame(true);
+        }
+    }
+    public void IncrementCasualtyCount()
+    {
+        // check lose that one npc hurted by the fire
+        if (casualtyCount == 1)
+        {
+            // call GameModeManager script and set false to lose
+            gameModeManager.EndGame(false);
+        }
+    }
+
+
+    public void StartCounting()
+    {
+        // set 7 second delay because of the game opening animation
+        StartCoroutine(ShowCountAfterDelay(7f)); 
+    }
+
+    IEnumerator ShowCountAfterDelay(float delay)
+    {
+        // For binding events
+        yield return new WaitForSeconds(delay);
+        // show the GUI
+        showCount = true;
+    }
+
+    private void OnGUI()
+    {
+        if (showCount)
+        {
+            // set GUI size and font size
+            GUI.skin.label.fontSize = 30;
+            Rect labelRect = new Rect(20, 20, 500, 50);
+            // set text's font color
+            GUIStyle style = new GUIStyle(GUI.skin.label);
+            style.normal.textColor = Color.white; // 你可以选择你想要的文字颜色
+            // creat "Number of persons escaping: " text
+            GUI.Label(labelRect, "Number of persons escaping: ", style);
+            GUI.Label(labelRect, "Number of persons hurting: ", style);
+            // set number's font color
+            style.normal.textColor = Color.green;
+            // create escapeCount value and adjust it's position
+            GUI.Label(new Rect(labelRect.x + 400, labelRect.y+3, labelRect.width, labelRect.height), escapeCount.ToString(), style);
+        }
+    }
+}
