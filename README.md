@@ -1,6 +1,5 @@
 # DECO7381
 # Stadium Modelling
-
 Version 1
 Software Testing Phase. Explore the modelling potential of Unity.ProBuilder. ProBuilder is a powerful plug-in for Unity designed to simplify modelling. To evaluate its capabilities, we created a simple stadium model. Through this test, we gained insight into how ProBuilder performs when dealing with various modelling issues, such as audience seating arrangements and other details. This will provide us with experience for our subsequent development work and help us to use the tool more effectively to create high-quality 3D models.
 
@@ -16,3 +15,9 @@ Version 4
 Modelling the third floor and the roof of the stadium.
 Modelling the internal structure of the stadium and add obstacles.
 Change the dimensions of the corridors, doors, etc. according to the reality and the needs of other parts of the PROJECT.
+
+# Camera control
+Use the space bar to raise the camera, use the control key to lower the camera
+
+# NPC automatic movement
+After the game starts, let the NPC move towards the gate.
