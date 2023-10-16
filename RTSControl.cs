@@ -9,7 +9,7 @@ using UnityEngine.Diagnostics;
 
 public class RTSControl : MonoBehaviour
 {
-    [Header("Ñ¡ÖĞµ¥Î»Ìõ¼ş²ÎÊı")]
+    [Header("é€‰ä¸­å•ä½æ¡ä»¶å‚æ•°")]
     [SerializeField] private RectTransform _selectedLineBox;
     [SerializeField] private LayerMask _utilsLayer;
     [SerializeField] private LayerMask _groundLayer;
@@ -34,13 +34,13 @@ public class RTSControl : MonoBehaviour
         HashSet<RTSUtils> utils = RTSManager.Instance.SelectedRtsUtilsSet;
         if (Input.GetMouseButtonDown(1) && utils.Count > 0)
         {
-            Debug.Log("Êó±êÓÒ¼ü£¬ÇÒ´æÔÚÑ¡ÖĞµ¥Î»");
+            Debug.Log("é¼ æ ‡å³é”®ï¼Œä¸”å­˜åœ¨é€‰ä¸­å•ä½");
             if (Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hitinfo, 100))
             {
-                Debug.Log("Êó±êÓÒ¼üµã»÷Î»ÖÃÎªµØĞÎ");
+                Debug.Log("é¼ æ ‡å³é”®ç‚¹å‡»ä½ç½®ä¸ºåœ°å½¢");
                 foreach (var eachUtils in utils)
                 {
-                    Debug.Log("ÒÆ¶¯");
+                    Debug.Log("ç§»åŠ¨");
                     eachUtils.DoMove(hitinfo.point);
                 }
             }
@@ -131,3 +131,4 @@ public class RTSControl : MonoBehaviour
            
     }
 }
+// sourceï¼šhttps://www.bilibili.com/video/BV1tB4y1J7ra/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click
