@@ -1,0 +1,50 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Camera : MonoBehaviour
+{
+    bool isDown = false;
+    float rotSpeed = 10;
+
+    // movement components
+    private float moveSpeed = 4f;
+    private float upDownSpeed = 3.0f;
+
+    // Update is called once per frame
+    void Update()
+    {
+        // Middle mouse button to control viewpoint rotation
+        if (Input.GetMouseButtonDown(2))
+        {
+            isDown = true;
+        }
+        if (Input.GetMouseButtonUp(2))
+        {
+            isDown = false;
+        }
+        if (isDown)
+        {
+            // Rotate horizontally
+            float mx = Input.GetAxis("Mouse X");
+            Quaternion qx = Quaternion.AngleAxis(mx * rotSpeed, Vector3.up);
+            transform.rotation = transform.rotation * qx;
+        }
+        Move();
+    }
+
+    // move
+    public void Move()
+    {
+        //get the horizontal and vertical in number
+        float horizontal = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        float vertical = Input.GetAxisRaw("Vertical") * moveSpeed;
+        float upDown = Input.GetKey(KeyCode.Space) ? upDownSpeed : Input.GetKey(KeyCode.LeftControl) ? -upDownSpeed : 0;
+        // direction in a normalized vector
+        Vector3 movementDirection = new Vector3(horizontal, upDown, vertical);
+        transform.Translate(movementDirection * Time.deltaTime);
+    }
+
+
+
+}
