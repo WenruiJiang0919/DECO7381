@@ -7,7 +7,7 @@ public class npcGenerator : MonoBehaviour
 
     private void Start()
     {
-        // 调用一个方法来生成NPC
+        // Call a method to generate an NPC
         GenerateNPCs();
     }
 
@@ -15,7 +15,7 @@ public class npcGenerator : MonoBehaviour
     {
         foreach (var spawnPosition in spawnPositions)
         {
-            // 使用Instantiate函数生成NPC
+            // Generating NPCs with the Instantiate function
             Instantiate(npcPrefab, spawnPosition, Quaternion.identity);
         }
     }
