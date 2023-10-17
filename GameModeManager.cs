@@ -16,8 +16,6 @@ public class GameModeManager : MonoBehaviour
     public GameObject winPanel;
     public count Counter;
     public Camera testCamera;
-    /*public Slider progressBar;  // 添加此行来声明progressBar变量
-    public TextMeshProUGUI countdownText;  // 添加此行来声明countdownText变量*/
     public CountdownUIController countdownController;
     private Vector3 initialCameraPosition;
     private Quaternion initialCameraRotation;
@@ -55,6 +53,7 @@ public class GameModeManager : MonoBehaviour
         if (countdownController != null)
             countdownController.StartCountdown();
 
+        // Randomly select one of the 3 scenarios
         int randomMode = Random.Range(1, 4);
         switch (randomMode)
         {
@@ -168,8 +167,6 @@ public class GameModeManager : MonoBehaviour
             Debug.Log("RestartGame: Exit");
             
         
-        /*NPCcreate.GenerateNPC();*/
-      /*  PlayGame();*/
     }
 
     public void QuitGame()
