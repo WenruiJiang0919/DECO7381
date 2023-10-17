@@ -1,12 +1,29 @@
 # DECO7381
-## Kai Wang Part
+This is part of the unity functionality done by Kai Wang and Wenrui Jiang. Kai Wang is responsible for setting up the flame start location, delayed generation of the flame, and the spread of the flame. Jiang Wenrui is responsible for the game start screen, main camera position switching and the game success and failure page.
 
+## 🔥 Kai Wang part
+- ### Step 1️⃣
 
+    Searching for flame materials in Unity asset and communicating with the team members, I chose a flame material library. After downloading it and testing it in the scene, I finally picked the most suitable flame instance.
 
+- ### Step 2️⃣
 
+    Using the "**Move Tool**" I placed the selected flame instances into the initially built scene model. By changing the "**Size over Lifetime**" property in the "**Particle Effects**" settings, I realized to manage the amount of particles released and thus regulate the intensity of the flames. In addition, by using the "**Start Delay**" function, I realized to control the delayed appearance of the flames in the scene.
 
+- ### Step 3️⃣
 
-## Wenrui Jiang Part
+    Using duplicated flame instances and adjusting the position of the cloned flame instances and the timing of the cloned flame instances, I have achieved a simulation of the spread of flames within the arena. Furthermore, I took into account that in a realistic scenario, as the flame particles burn and grow, the flames may come into contact with the roof or walls of the arena. In order to prevent mold penetration, I added collision to the flame instance and set the layer where the collision occurs, that is, when the flame touches the roof or the wall of the model, the flame's "**life cycle**" will be gradually reduced, thus preventing the flame from penetrating the mold.
+
+- ### Step 4️⃣
+  
+    After going through the fieldwork and group discussions, I chose three areas with fire safety hazards and set fire points at corresponding locations in the arena model. At the same time, I wrote script code to make the flame instances realize more functions. By defining a variable for the flame diffusion direction and creating an array to store the flame diffusion direction and binding the corresponding module in Unity, I realized that I could freely set the delay generation time of the flame instances in Unity. By iterating through each spread direction in the **StartfireSpread** method and determining where the new flame is generated based on the current flame position I realize the freedom to set single or multiple spread directions for the flame in Unity.
+
+- ### Step 5️⃣
+  
+    Then I carried out the current function with other group members and realized that when the user clicks PLAY GAME he will be randomly assigned to a fire-starting scene and only the flame instance of that fire-starting scene will be awakened, and the main camera will be shifted to the game NPC after giving a close-up of the spread of that flame for 3 seconds. At the same time, the flames are given a collision body that kills the NPC when it touches the flame collision body. The game jumps to the game failure page.
+
+## 🎮 Wenrui Jiang part
+
 ### Part1: Fire & Camera Setting
 At the first stage, My team member Kai Wang and I started by using a flame model from Unity and modifying it to fit our project's needs. Here's how we did it:
 I added the flame model to the 3D arena, which was already set up by the teammate.
