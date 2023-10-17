@@ -12,13 +12,13 @@ public class count : MonoBehaviour
 
     private void Start()
     {
-        // 初始化计数
+        // Initialization Count
         escapeCount = 0;
     }
 
     public void IncrementEscapeCount()
     {
-        // 增加计数
+        // increment
         escapeCount++;
         if (escapeCount == 9)
         {
@@ -46,7 +46,7 @@ public class count : MonoBehaviour
 
     public void StartCounting()
     {
-        StartCoroutine(ShowCountAfterDelay(7f));  // 7秒延迟
+        StartCoroutine(ShowCountAfterDelay(7f));  // 7 seconds delay
     }
 
     IEnumerator ShowCountAfterDelay(float delay)
@@ -64,16 +64,14 @@ public class count : MonoBehaviour
             
 
             GUIStyle style = new GUIStyle(GUI.skin.label);
-            style.normal.textColor = Color.white; // 你可以选择你想要的文字颜色
+            style.normal.textColor = Color.white; // choose the color of the text you want
 
-            // 绘制 "Number of persons escaping: " 文本
+            // Drawing of the text "Number of escaping: " Text
             GUI.Label(labelRect1, "Number of persons escaping: ", style);
-            
 
-            // 改变颜色为绿色
             style.normal.textColor = Color.green;
 
-            // 绘制 escapeCount 值。需要将其与前一个标签的宽度相加以正确放置它
+            // Draws the escapeCount value. You need to add it to the width of the previous label to place it correctly
             GUI.Label(new Rect(labelRect1.x + 400, labelRect1.y + 3, labelRect1.width, labelRect1.height), escapeCount.ToString(), style);
 
            
