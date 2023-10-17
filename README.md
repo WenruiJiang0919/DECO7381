@@ -1,5 +1,5 @@
 # DECO7381
-## Zexuan Jiao part
+## 🏟️ Zexuan Jiao part
 ## Stadium Modelling
 ### Version 1
 Software Testing Phase. Explore the modelling potential of Unity.ProBuilder. ProBuilder is a powerful plug-in for Unity designed to simplify modelling. To evaluate its capabilities, we created a simple stadium model. Through this test, we gained insight into how ProBuilder performs when dealing with various modelling issues, such as audience seating arrangements and other details. This will provide us with experience for our subsequent development work and help us to use the tool more effectively to create high-quality 3D models.
