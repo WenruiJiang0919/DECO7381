@@ -3,26 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// 导航箭头
+/// Navigation arrows
 /// </summary>
 public class NavPathArrow : MonoBehaviour
 {
-    public MeshRenderer meshRenderer;//箭头3D对象Quad
-    public List<Transform> points = new List<Transform>();//路径点
-    private List<MeshRenderer> lines = new List<MeshRenderer>();//显示的路径
+    public MeshRenderer meshRenderer;// Arrow 3D Object Quad
+    public List<Transform> points = new List<Transform>();// route point
+    private List<MeshRenderer> lines = new List<MeshRenderer>();// Show paths
 
-    public float xscale = 1f;//缩放比例
+    public float xscale = 1f;// Zoom scale
     public float yscale = 1f;
 
     void Start()
     {
-        //箭头宽度缩放值
+        // Arrow width scaling value
         xscale = meshRenderer.transform.localScale.x;
-        //箭头长度缩放值
+        // Arrow height scaling value
         yscale = meshRenderer.transform.localScale.y;
     }
 
-    //画路径
+    // Drawing paths
     public void DrawPath()
     {
         if (points == null || points.Count <= 1)
@@ -33,7 +33,7 @@ public class NavPathArrow : MonoBehaviour
         }
     }
 
-    //画路径 参数为路径点数组
+    // Draw Path Parameters are an array of path points
     public void DrawPath(Vector3[] points)
     {
         if (points == null || points.Length <= 1)
@@ -44,14 +44,13 @@ public class NavPathArrow : MonoBehaviour
         }
     }
 
-    //隐藏路径
+    // Hidden Path
     public void HidePath()
     {
         for (int i = 0; i < lines.Count; i++)
             lines[i].gameObject.SetActive(false);
     }
 
-    //画路径
     private void DrawLine(Vector3 start, Vector3 end, int index)
     {
         Debug.Log(transform.gameObject.name);
@@ -70,9 +69,9 @@ public class NavPathArrow : MonoBehaviour
         var length = Vector3.Distance(start, end);
         tran.localScale = new Vector3(xscale, length, 1);
         tran.position = (start + end) / 2;
-        //指向end
+        // Point to end
         tran.LookAt(end);
-        //旋转偏移
+        // rotation offset
         tran.Rotate(90, 0, 0);
         mr.material.mainTextureScale = new Vector2(1, length * yscale);
         mr.gameObject.SetActive(true);
