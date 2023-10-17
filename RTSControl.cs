@@ -1,3 +1,5 @@
+// source：https://www.bilibili.com/video/BV1tB4y1J7ra/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,7 +11,7 @@ using UnityEngine.Diagnostics;
 
 public class RTSControl : MonoBehaviour
 {
-    [Header("选中单位条件参数")]
+    [Header("Selected unit condition parameter")]
     [SerializeField] private RectTransform _selectedLineBox;
     [SerializeField] private LayerMask _utilsLayer;
     [SerializeField] private LayerMask _groundLayer;
@@ -34,13 +36,13 @@ public class RTSControl : MonoBehaviour
         HashSet<RTSUtils> utils = RTSManager.Instance.SelectedRtsUtilsSet;
         if (Input.GetMouseButtonDown(1) && utils.Count > 0)
         {
-            Debug.Log("鼠标右键，且存在选中单位");
+            Debug.Log("Right mouse button and selected unit exists");
             if (Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), out RaycastHit hitinfo, 100))
             {
-                Debug.Log("鼠标右键点击位置为地形");
+                Debug.Log("Right mouse click position for terrain");
                 foreach (var eachUtils in utils)
                 {
-                    Debug.Log("移动");
+                    Debug.Log("Move");
                     eachUtils.DoMove(hitinfo.point);
                 }
             }
@@ -131,4 +133,3 @@ public class RTSControl : MonoBehaviour
            
     }
 }
-// source：https://www.bilibili.com/video/BV1tB4y1J7ra/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click
