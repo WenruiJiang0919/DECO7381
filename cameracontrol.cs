@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float moveSpeed = 5f; // 摄像头移动速度
-    public float rotationSpeed = 2f; // 旋转速度
+    public float moveSpeed = 5f; // Camera movement speed
+    public float rotationSpeed = 2f; // rotation speed
 
     private Camera mainCamera;
     private bool isRotating = false;
@@ -15,39 +15,39 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        // 获取用户的输入
+        // Getting user input
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        // 计算移动方向
+        // Calculate the direction of movement
         Vector3 moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized;
 
-        // 检查空格键和Ctrl键的输入，根据按键情况确定上升或下降的方向
+        // Check the spacebar and Ctrl key inputs to determine the direction of ascent or descent based on keystrokes
         if (Input.GetKey(KeyCode.Space))
         {
-            moveDirection.y += 1; // 上升
+            moveDirection.y += 1; // go upward
         }
         if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl))
         {
-            moveDirection.y -= 1; // 下降
+            moveDirection.y -= 1; // go down
         }
 
-        // 根据输入移动摄像头
+        // Move the camera according to the input
         transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
 
-        // 鼠标中键按下时开始旋转
+        // Spinning starts when the middle mouse button is pressed
         if (Input.GetMouseButtonDown(2))
         {
             isRotating = true;
         }
 
-        // 鼠标中键释放时停止旋转
+        // Stop rotating when the middle mouse button is released
         if (Input.GetMouseButtonUp(2))
         {
             isRotating = false;
         }
 
-        // 如果正在旋转，根据鼠标的X轴移动旋转摄像头
+        // If it is rotating, move the rotating camera according to the X axis of the mouse
         if (isRotating)
         {
             float rotationX = Input.GetAxis("Mouse X") * rotationSpeed;
