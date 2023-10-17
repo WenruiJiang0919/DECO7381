@@ -17,13 +17,13 @@ public class disapear : MonoBehaviour
             count gameManager = FindObjectOfType<count>();
             if (gameManager != null)
             {
-                if (gameObject.CompareTag("door"))  // 检查物体是否是"Door"标签
+                if (gameObject.CompareTag("door"))  // Check if the object is labeled "Door".
                 {
-                    gameManager.IncrementEscapeCount(); // 逃生人数+1
+                    gameManager.IncrementEscapeCount(); // Number of escapees +1
                 }
-                else if (gameObject.CompareTag("fire"))  // 检查物体是否是"Fire"标签
+                else if (gameObject.CompareTag("fire"))  // Check if the object is labeled "Fire".
                 {
-                    gameManager.IncrementCasualtyCount(); // 伤亡人数+1
+                    gameManager.IncrementCasualtyCount(); // Casualties +1
                 }
             }
         }
