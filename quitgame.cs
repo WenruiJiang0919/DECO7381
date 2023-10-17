@@ -8,7 +8,7 @@ public class quitgame : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            // 在用户按下ESC键时退出游戏
+            // Exit the game when the user presses the ESC key
             gameModeManager.QuitGame();
         }
     }
