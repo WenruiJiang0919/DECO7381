@@ -3,18 +3,18 @@ using UnityEngine.AI;
 
 public class MoveAfterDelay : MonoBehaviour
 {
-    public float delay = 10f; // 延迟时间
+    public float delay = 10f; // delay time
     private NavMeshAgent agent;
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        Invoke("FindTargetAndMove", delay); // 在指定的延迟之后调用FindTargetAndMove方法
+        Invoke("FindTargetAndMove", delay); // Call the FindTargetAndMove method after the specified delay.
     }
 
     private void FindTargetAndMove()
     {
-        // 根据标签"Door"查找建筑物
+        // Find buildings according to the label "Door".
         GameObject door = GameObject.FindGameObjectWithTag("targetdoor1");
 
         if (door != null)
