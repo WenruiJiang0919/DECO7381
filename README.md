@@ -1,5 +1,6 @@
 # DECO7381 
 # Escape
 ## Installation
-Mac OS: <a href="https://github.com/trolit/projectZero/releases/download/v0.92/ProjectZero_installer.exe">Click here to download Project Zero installer</a>
-</p>
+Mac OS:&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/WenruiJiang0919/DECO7381/releases/tag/macversion">Click here to download Game Escape for mac</a>
+
+Windows: <a> </a>
