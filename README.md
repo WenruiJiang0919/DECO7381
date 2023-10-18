@@ -7,7 +7,7 @@ All C# code used in the project is visible from the <a href="https://github.com/
 Individual team contributions can be viewed in github's branch from the <a href="https://github.com/WenruiJiang0919/DECO7381.git">link</a>.
 
 ## Installation
-### Mac OS:&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/WenruiJiang0919/DECO7381/releases/tag/macversion">Click here to download Game Escape for mac</a>
+### Mac OS:&nbsp;&nbsp;<a href="https://github.com/WenruiJiang0919/DECO7381/releases/tag/macversion">Click here to download Game Escape for mac</a>
 
 - Step 1️⃣&nbsp;:&nbsp;&nbsp;Click the link and click the **"Escape.app.zip"** to download;
 - Step 2️⃣&nbsp;:&nbsp;&nbsp;Compress the zip file package and click Escape.app.
@@ -16,7 +16,7 @@ Individual team contributions can be viewed in github's branch from the <a href=
 #### Note:&nbsp;&nbsp;If opening the app is rejected by your mac, you can hold down the **"Control"** key and click on the app, then click **"Open"**.
 
 
-### Windows:&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/WenruiJiang0919/DECO7381/releases/tag/winversion">Click here to download Game Escape for windows</a>
+### Windows:&nbsp;&nbsp;<a href="https://github.com/WenruiJiang0919/DECO7381/releases/tag/winversion">Click here to download Game Escape for windows</a>
 
 - Step 1️⃣&nbsp;:&nbsp;&nbsp;Click the link and click the **"Escape_win.zip"** to download;
 - Step 2️⃣&nbsp;:&nbsp;&nbsp;Compress the zip file package and open the package and click DEMO 02.exe.
