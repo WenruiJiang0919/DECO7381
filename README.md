@@ -1,5 +1,11 @@
-# DECO7381 
-# Escape
+# DECO7381 Escape
+## Statement
+This project is developed based on Unity, with all functionalities realized through writing C# scripts and utilizing the built-in features of Unity. The fire materials are sourced from Unity Assets.<br/><br/>
+The fire materials can be downloaded from the <a href="https://assetstore.unity.com/packages/vfx/particles/fire-explosions/fire-smoke-dynamic-nature-217775">link</a>.<br/><br/>
+Unity can be downloaded from the <a href="https://unity.com">link</a>.<br/><br/>
+All C# code used in the project is visible from the <a href="https://github.com/WenruiJiang0919/DECO7381/tree/DECO7381-No-Eye-Deer-Codebase">link</a>.<br/><br/>
+Individual team contributions can be viewed in github's branch from the <a href="https://github.com/WenruiJiang0919/DECO7381.git">link</a>.
+
 ## Installation
 ### Mac OS:&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/WenruiJiang0919/DECO7381/releases/tag/macversion">Click here to download Game Escape for mac</a>
 
