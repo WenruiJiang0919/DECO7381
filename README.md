@@ -46,22 +46,18 @@ The game "Escape" is based on the project "Optimized Events - Digital Twins for 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🚫 NPCs come into contact with flames.<br/><br/>
 
 ## Screens from the Game
-<table width="100%">
+<table>
     <tr>
-        <td width="16.66%"></td>
-        <td width="33.33%"><img src="image1.jpg" width="350px" height="140px"></img></td>
-        <td width="33.33%"><img src="image2.jpg" width="350px" height="140px"></img></td>
-        <td width="16。66%"></td>
+        <td colspan="2"><a href="https://sm.ms/image/E3LuVTFcSpl9PKB" target="_blank"><img src="https://s2.loli.net/2023/10/18/E3LuVTFcSpl9PKB.png" width="310px" height="180px"></a></td>
+        <td colspan="2"><a href="https://sm.ms/image/KVg5w6PGmZNakQH" target="_blank"><img src="https://s2.loli.net/2023/10/18/KVg5w6PGmZNakQH.png" width="310px" height="180px"></a></td>
     </tr>
     <tr>
-        <td width="33.33%"><img src="image3.jpg" width="350px" height="140px"></img></td>
-        <td width="33.33%"><img src="image4.jpg" width="350px" height="140px"></img></td>
-        <td width="33.33%"><img src="image5.jpg" width="350px" height="140px"></img></td>
+        <td><a href="https://sm.ms/image/vPZuo9JRi1CEQjX" target="_blank"><img src="https://s2.loli.net/2023/10/18/vPZuo9JRi1CEQjX.png" width="310px" height="180px"></a></td>
+        <td><a href="https://sm.ms/image/L4JKFIGSgrMkt7a" target="_blank"><img src="https://s2.loli.net/2023/10/18/L4JKFIGSgrMkt7a.png" width="310px" height="180px"></a></td>
+        <td><a href="https://sm.ms/image/qRCEPTsjWyLVvGi" target="_blank"><img src="https://s2.loli.net/2023/10/18/qRCEPTsjWyLVvGi.png" width="310px" height="180px"></a></td>
     </tr>
     <tr>
-        <td width="16.66%"></td>
-        <td width="33.33%"><img src="image1.jpg" width="350px" height="140px"></img></td>
-        <td width="33.33%"><img src="image2.jpg" width="350px" height="140px"></img></td>
-        <td width="16。66%"></td>
+        <td colspan="2"><a href="https://sm.ms/image/rOv4pdCsAQH9J6U" target="_blank"><img src="https://s2.loli.net/2023/10/18/rOv4pdCsAQH9J6U.png" width="310px" height="180px"></a></td>
+        <td colspan="2"><a href="https://sm.ms/image/1NLSpFs7whU64r3" target="_blank"><img src="https://s2.loli.net/2023/10/18/1NLSpFs7whU64r3.png" width="310px" height="180px"></a></td>
     </tr>
 </table>
