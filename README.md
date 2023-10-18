@@ -40,7 +40,28 @@ The game "Escape" is based on the project "Optimized Events - Digital Twins for 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❌ &nbsp;**EXIT Button**&nbsp;:&nbsp;&nbsp;Displayed in the game over panel, click on it to exit the game.<br/><br/>
 
 ## Game Results
-### 🏟️ **3D Modeling**&nbsp;:&nbsp;&nbsp;Modeling was done in 3D and recreated the Suncorp Stadium as closely as possible to achieve the best possible fire escape simulation.<br/><br/>
-🎮 **Viewpoint Control**&nbsp;:&nbsp;&nbsp;Controls the switching of camera viewpoints within the game through the keys that the user is accustomed to.<br/><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🔼 "**W**"&nbsp;:&nbsp;&nbsp;Controls the viewpoint to move forward.<br/><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🔽 "**S**"&nbsp;:&nbsp;&nbsp;Controls the viewpoint to move backward.<br/><br/>
+🏆 **Game Success**&nbsp;:&nbsp;&nbsp;The player assists the 9 NPCs to escape the scene safely through the fire-free exit within the time limit.<br/><br/>
+🚨 **Game Fail**&nbsp;:<br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⏳ At the end of the countdown, there are still NPCs lingering in the stadium.<br/><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🚫 NPCs come into contact with flames.<br/><br/>
+
+## Screens from the Game
+<table width="100%">
+    <tr>
+        <td width="16.66%"></td>
+        <td width="33.33%"><img src="image1.jpg" width="350px" height="140px"></img></td>
+        <td width="33.33%"><img src="image2.jpg" width="350px" height="140px"></img></td>
+        <td width="16。66%"></td>
+    </tr>
+    <tr>
+        <td width="33.33%"><img src="image3.jpg" width="350px" height="140px"></img></td>
+        <td width="33.33%"><img src="image4.jpg" width="350px" height="140px"></img></td>
+        <td width="33.33%"><img src="image5.jpg" width="350px" height="140px"></img></td>
+    </tr>
+    <tr>
+        <td width="16.66%"></td>
+        <td width="33.33%"><img src="image1.jpg" width="350px" height="140px"></img></td>
+        <td width="33.33%"><img src="image2.jpg" width="350px" height="140px"></img></td>
+        <td width="16。66%"></td>
+    </tr>
+</table>
