@@ -4,7 +4,7 @@
 ### Mac OS:&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/WenruiJiang0919/DECO7381/releases/tag/macversion">Click here to download Game Escape for mac</a>
 
 - Step 1️⃣&nbsp;:&nbsp;&nbsp;Click the link and click the **"Escape.app.zip"** to download;
-- Step 2️⃣&nbsp;:&nbsp;&nbsp;Compress the zip file package and click Escape. app.
+- Step 2️⃣&nbsp;:&nbsp;&nbsp;Compress the zip file package and click Escape.app.
   
 
 #### Note:&nbsp;&nbsp;If opening the app is rejected by your mac, you can hold down the **"Control"** key and click on the app, then click **"Open"**.
