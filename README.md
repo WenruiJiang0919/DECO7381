@@ -1,13 +1,16 @@
 # DECO7381
-## 🇨 This is all the c# file code used in the project.
-- 🔟 Countdown.cs is mounted on the countdown UI to control the style of the countdown UI and the event that occurs after the countdown ends.
-- 🔥 FireSpread.cs is mounted on each flame instance and is used to control flame instance delay generation, spread direction, and spread time.
-- 👨‍💼 GameModeManager.cs is mounted on GameModeManager component, which is used to control the main functions of the whole game, including the opening of the game, the selection of the flame scene, the judgment of the game's win and lose, etc. It is the core script of the whole game.
-- nav：路线导航
-- rtscontrol:挂载同名空物体改变选择框大小和npc单位移动
-- manager：挂载同名空物体左键取消选中，创建hash存所有选中的npc
-- utils：挂载npc单位控制单个npc移动，和control配合
-- single：写hash集的
-- audien：挂载在audience上模拟人群逃生
-- disappear：挂载火焰碰撞体和门
-- quit：空物体
+## 💻 This is all the c# scripts code used in the project.
+- 🔟 Countdown.cs is mounted on the countdown UI to control the style of the countdown UI and the event that occurs after the countdown ends.<br></br>
+- 🔥 FireSpread.cs is mounted on each flame instance and is used to control flame instance delay generation, spread direction, and spread time.<br></br>
+- 👨‍💼 GameModeManager.cs is mounted on GameModeManager component, which is used to control the main functions of the whole game, including the opening of the game, the selection of the flame scene, the judgment of the game's win and lose, etc. It is the core script of the whole game.<br></br>
+- 🧩 NavPathArrow.cs is attached to a specific model object, and is used to control and display the path from one point to another. It can dynamically create and hide path lines, and can trigger the display and hiding of the path through GUI buttons. This functionality will be implemented in the next phase.<br></br>
+- 🕹️ RTSControl.cs is mounted on an empty game object of the same name, primarily controlling the size of the selection box and the movement of NPC units. By capturing user inputs, it facilitates the selection and movement of units within the game.<br></br>
+- 🎮 RTSManager.cs is mounted on an object of the same name and allows for deselection via left-click, while creating a hash set to store all selected NPCs. This code enables the selection and deselection of RTSUtils objects, and provides a method for handling the destruction of RTSUtils objects.<br></br>
+- 🤖 RTSUtils.cs is mounted on each NPC unit and is used to control the movement of individual NPC, working in conjunction with RTSControl to achieve this function.<br></br>
+- 🔒 Singleton.cs is a generic singleton pattern template, aimed at ensuring a specific type of MonoBehaviour-derived class has only one instance in the scene. Through the public static Instance property, other classes can easily reach this singleton object. Inside the Awake method, it looks for an existing singleton instance, and if found, it gets rid of the newly created object to keep the singleton unique.<br></br>
+- 🚶 audiencemove.cs is mounted on non-player-controlled audiences, simulating evacuation in a fire scenario by directing movement towards targetdoor1 post a specified delay.<br></br>
+- 📷 cameracontroller.cs is mounted on the main camera, controlling the movement and rotation of the camera. It adjusts the camera's position and rotation angle by listening to the user's keyboard and mouse input, providing flexible viewpoint control for the user.<br></br>
+- 📈 Count.cs: Mounted on a specific empty object, it manages escape and casualty counts, notifies GameModeManager to end the game under certain conditions, and shows count after a delay.<br></br>
+- ⚔️ disapear.cs is mounted on a specific game object and handles collision events with audience or NPCs, destroys colliding objects, and updates escape or casualty count based on the current object's tag.<br></br>
+- 👾 npcGenerator.cs is mounted on the npcGenerator game object and is used to control the generation of player-controlled NPCs at the start of the game and when restarting the game. The restart game feature will be completed in the next phase.<br></br>
+- 🚪 quitgame.cs is mounted on the empty object quitgame and allows the user to exit the game by pressing the ESC key at any point in the game.
